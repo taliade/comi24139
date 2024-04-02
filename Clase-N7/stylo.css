@@ -1,0 +1,97 @@
+header{
+    height:200rem;
+    width: 80em;
+    border: 2px solid white;
+}
+
+
+div{
+    width: 250px;
+    height: 250px;
+    border: 3px solid white;
+    display:inline-block;         /*   trabaja como caja contenedora   */
+    margin: 15px 10px 20px 30px;
+    padding: 10px 20px 30px 40px;
+    font-size: 40px;
+}
+
+.box-1{
+    background-color: aqua;
+    border-color: blue red;
+    border-width: 13px;
+    border-style: groove;
+}
+
+.box-2{
+    background-color: darkslategray;
+    border-color: black violet;
+    border-width: 13px;
+    border-style: inset;
+}
+
+.box-3{
+    background-color: pink;
+    font-size: 30px;
+    overflow: auto;
+    border-radius: 30%;
+}
+
+.box-4{
+    background-color: orange;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+}
+
+.box-5{
+    background-color: gainsboro;
+}
+
+.contenedor-box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+.elemento1 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
+}
+.elemento2 {
+    position: absolute;
+    top: -9px;
+    left: 113px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 2;
+}
+
+
+
+
+/* Definición de estilos para el contenedor */
+.contenedor {
+    width: 300px; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 20px; /* Espacio interno del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Definición de estilos para el contenido interno */
+.contenido {
+    width: 100%; /* Ancho del contenido interno */
+    height: 100%; /* Altura del contenido interno */
+    background-color: #ccc;
+    border: 1px solid #666;
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y altura */
+    overflow:auto;
+}

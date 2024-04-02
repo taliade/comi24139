@@ -1,0 +1,109 @@
+/* Unidades de medidas */
+/* Extenciones utilizadas Beautify css/sass/scss/less   -  Color Highlight  -  Color Info - Color Picker  
+
+*/
+/* Lovers Quarrel
+Static  */
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+body{
+    /* 
+        font-size:  - Margin - padding - color  
+    */
+}
+
+h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+h2 {
+    font-size: 1.875em;  /* 30px/16=1.875em */
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 20px;
+}
+
+section{
+    height: 300%;
+    width: 100%;
+    border: 2px solid red;
+}
+.box1{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    margin: 20px;
+}
+.box2{
+    width: 20em;
+    height: 10em;
+    background-color: green;
+    margin: 10px;
+}
+.box3{
+    width: 30vh;
+    height: 15vh;
+    background-color: yellow;
+    margin: 20px;
+    padding: 0;
+    font-size: 15px;
+}
+
+.box4{
+    width: 50vw;
+    height: 60vh;
+    background-color:#BB8FCE
+}
+
+
+
+
+body {font-size: 300%;}
+        p.normal_style {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+p.normal_weight {
+    font-weight: normal;
+}
+
+p.light {
+    font-weight: lighter;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+p.thicker {
+    font-weight: 900;
+}
+
+p.normal_variant {
+    font-variant: normal;
+}
+
+p.small {
+    font-variant: small-caps;
+}

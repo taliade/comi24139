@@ -1,0 +1,79 @@
+body{
+    color:chartreuse;
+    font-size: 26px;
+
+}
+
+.sec, p,a{
+    background-color: #007bff;
+
+}
+div{
+    background-color: none;
+}
+
+
+
+/* a:link{
+    background-color: blue;
+
+} */
+
+a:visited{
+    color:darkgreen;
+}
+
+div{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+}
+
+/* div:hover{
+    color:crimson;
+    background-color: darkkhaki;
+} */
+
+div:active{
+    color:crimson;
+    background-color: darkkhaki;
+}
+
+
+.caja-texto{
+    border-radius: 20%;
+    font-size: 30px;
+}
+
+.caja-texto:focus{
+    background-color: aquamarine;
+}
+
+.cua:checked {
+    color: blueviolet;
+
+}
+
+.nuevo:checked{
+    background-color: aliceblue;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    position: relative;
+    animation: mover 2s ease-in-out infinite; /* Nombre de la animación, duración, función de temporización y repeticiones */
+}
+
+@keyframes mover {
+    0% {
+        left: 0; /* Comenzar desde la posición original */
+    }
+    50% {
+        left: 200px; /* Mover el cuadrado hacia la derecha */
+    }
+    100% {
+        left: 0; /* Volver a la posición original */
+    }
+}

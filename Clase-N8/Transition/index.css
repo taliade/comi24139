@@ -1,0 +1,212 @@
+/* Menú horizontal con transiciones */
+
+/* Formato general de cada item */
+
+.menu {
+  display: block;
+  position: relative;
+  height: 76px;
+  width: 120px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Bordes superiores */
+
+.menu.servicios {
+  border-top: #ffc000 0.3em solid;
+}
+
+.menu.recursos {
+  border-top: #b81800 0.3em solid;
+}
+
+.menu.proyectos {
+  border-top: #00a53c 0.3em solid;
+}
+
+.menu.contacto {
+  border-top: #9600b4 0.3em solid;
+}
+
+/* Atributos y transición */
+
+.menu > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.menu:after, .menu > span > span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+  padding: 2em 0 1.5em;
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+  background: #000;
+  color: #fff; 
+}
+
+.menu > span > span {
+  width: 120px;
+  color: #fff;
+}
+
+.menu.servicios > span > span {
+  background: #ffc000;
+}
+
+.menu.proyectos > span > span {
+  background: #00a53c;
+}
+
+.menu.recursos > span > span {
+  background: #b81800;
+}
+
+.menu.contacto > span > span {
+    background: #9600b4;
+}
+
+/* Lo que pasa con hover */
+
+.menu:hover > span {
+    height: 100%; 
+}
+
+/* Dando formato a lista */ 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: sans;
+}
+
+
+
+/* Todas las cajas de colores  */
+
+.container{
+  position: relative;
+}
+.caja{
+width: 180px;
+height: 180px;
+background-color: #30B037;
+color: #FFF;
+text-align: center;
+line-height: 180px; 
+margin: 15px;
+float: left;
+font-size: 18px;
+font-family: Arial;
+}
+.caja1{
+background-color: #2bc0be;
+-webkit-transition: background-color 3s linear;
+transition: background-color 3s linear;
+}
+.caja1:hover{
+background-color: #3F51B5;
+}
+.caja2{
+background-color: #9B59B6;
+-webkit-transition: font-size 5s ease;
+transition: font-size 1s ease;
+}
+.caja2:hover{
+font-size: 38px;
+}
+.caja3{
+background-color: #2980B9;
+font-size: 28px;
+-webkit-transition: color 1s linear;
+transition: color 1s linear;
+}
+.caja3:hover{
+color: yellow;
+
+}
+.caja4{
+background-color: #77b68f;
+-webkit-transition: 1s linear;
+transition: 1s linear;
+}
+.caja4:hover{
+line-height: 300px;
+}
+.caja5{
+border-radius: 5px;
+background-color: #17A589;
+-webkit-transition: 1s linear;
+transition: 1s linear
+}
+.caja5:hover{
+border-radius: 30px;
+}
+.caja6{
+-webkit-transition: 3s linear;
+transition: 3s linear;
+background-color: #F1C40F;
+}
+.caja6:hover{
+-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+.caja7{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: #E67E22;
+}
+.caja7:hover{
+opacity: 0.1;
+}
+.caja8{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: #95A5A6;
+}
+.caja8:hover{
+border-style: solid;
+border-color: #95A5A6;
+border-color: #000;
+border-color: #00a53c;
+}
+.caja9{
+-webkit-transition: 3s linear;
+transition: 3s linear;
+background-color: #2C3E50;
+
+}
+.caja9:hover{
+margin: 80px;
+}
+.caja10{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: black;
+}
+.caja10:hover{
+padding: 30px;
+}
+
+
+
+
