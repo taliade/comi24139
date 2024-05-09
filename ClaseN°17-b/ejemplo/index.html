@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo como ver la memoria del Web Storage </title>
+    
+</head>
+<body>
+    <div id="elements"></div> <!-- Cambiado el id a "elements" -->
+
+    <script>
+        // Definir una lista vacía como valor predeterminado si no hay nada en localStorage
+        let lst = JSON.parse(localStorage.getItem("list")) || [];
+
+        lst.forEach(element => {
+            let elements = document.getElementById("elements");
+            let div = document.createElement("div");
+            div.innerHTML = element.name + " " + element.age;
+            elements.appendChild(div);
+        });
+    </script>
+    
+</body>
+</html>
