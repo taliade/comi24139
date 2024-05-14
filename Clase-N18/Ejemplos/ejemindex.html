@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase N°18 DOM </title>
+    
+</head>
+<body>
+    <h1> Holaaa
+
+    </h1>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header"> <!-- caja-->
+        <a class="navbar-brand" href="#" target="_blank" rel="noopener noreferrer">Mi Sitio web  </a>  
+        </div>
+    </nav>
+
+    <div class="container">
+
+    <div class="jumbotron">
+        <h2 class="display-2" id="title">Titulo...   </h2>
+        <p class="description_container" id="description">
+            Breve descripcion 
+        </p>
+    </div>    
+    </div>
+
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item" id="first-course">Python</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">Java 8</li>
+            <li class="list-group-item">Ruby</li>
+            <li class="list-group-item">C#</li>
+            <li class="list-group-item">Kotlin</li>
+            <li class="list-group-item" id="last-course">Perl</li>
+        </ul>
+
+    </div>
+
+    <div> 
+        <p id="pid">Esto un parrafo con id </p>
+
+        
+    </div>
+
+
+    <div>
+    <h2 id="titles"> Hola Mundo!! </h2>
+    <button id="miBoton">Haz clic aquí</button>
+    <h3>Ejemplo de eventos de teclado</h3>
+    <p>Introduce algo en el siguiente campo de texto:</p>
+    <input  placeholder=" Ingrese su nombre "> 
+    </div>
+
+
+
+    <footer>  
+        <div class="container">
+        <div class="row"> 
+        <p class="copyright"> &copy; Talia Rodrigues</p> 
+        </div> 
+        </div>
+    </footer>
+    <!-- Como es archivo externo se ubica antes del cierre del 
+          body-->
+    <script> 
+
+        // / accedo al DOM 
+        // const titulos = document.querySelector('h1');
+        
+        // titulos.innerHTML='style no visiable';
+        // document.body.appendChild(h1);
+        
+        // const tecla = document.createElement('div');
+        // console.log(tecla);
+        // tecla.innerHTML ='Modificar y generar cambios';
+        
+//Agregar imagen con mi querySelector de parrafo por id 
+const pid = document.getElementById('pid');
+//Crear un elemento de imagen
+const img = document.createElement('img');
+
+//Establecer el atributo 'src' de la imagen
+img.setAttribute('src', 'https://i.pinimg.com/originals/8b/02/40/8b02409f975c98c89e15bc089e3bd289.gif');
+
+//Seleccionar el párrafo que quieres reemplazar
+const paragraphToReplace = document.getElementById('pid');
+
+//Obtener el padre del párrafo
+const parentDiv = paragraphToReplace.parentNode;
+
+//Reemplazar el párrafo con la imagen creada
+parentDiv.replaceChild(img, paragraphToReplace);
+
+//Seleccionar el elemento a reemplazar (reemplaza 'pid' con el selector del elemento que deseas reemplazar)
+const elementAReemplazar = document.querySelector('#pid');
+
+//Reemplazar el elemento con la imagen creada
+elementAReemplazar.replaceWith(img);
+        
+        </script>
+</body>
+</html>

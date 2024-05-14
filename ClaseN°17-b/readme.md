@@ -37,3 +37,19 @@ console.log(typeof(lista));
 //Pero vamos a usar el listado de objetos con JSON 
 lista = JSON.parse(localStorage.getItem("list"));
 console.log(typeof(lista));
+
+## Ejemplo del Ejecucion 
+<div id="elements"></div> <!-- Cambiado el id a "elements" -->
+
+    <script>
+        // Definir una lista vacía como valor predeterminado si no hay nada en localStorage
+        let lst = JSON.parse(localStorage.getItem("list")) || [];
+
+        lst.forEach(element => {
+            let elements = document.getElementById("elements");
+            let div = document.createElement("div");
+            div.innerHTML = element.name + " " + element.age;
+            elements.appendChild(div);
+        });
+    </script>
+    

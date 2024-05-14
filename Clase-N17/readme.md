@@ -3,7 +3,9 @@
 const frutas = ['manzana🍎', 'plátano🍌', 'naranja🍊', 'uva🍇'];
 
 console.log(frutas);
-
+let matriz = [[], [],[]]
+let matrizejem = [[1,2,3],[4, 5, 6],[ 7, 8, 9]]; //matriz de 3x3
+console.log(matrizejem);
 # Acceder al arrays y metodos at()
 const frutas = ['manzana🍎', 'plátano🍌', 'naranja🍊', 'uva🍇'];
 

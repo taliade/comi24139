@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>DOM</h1>
+   <p>Solo cambia el primer elemento:</p>
+
+   <!-- <div class="ejemplo">Elemento 1</div>
+   <div class="ejemplo">Elemento 2</div>
+
+   <script>
+     var x = document.getElementsByClassName("ejemplo")
+     x[0].innerHTML = "Hola Codo a Codo!"
+   </script> -->
+   <div class="ejemplo" id="ejem">Elemento 1</div>
+   <div class="ejemplo">Elemento 2</div>
+   <div class="ejemplo">Elemento 3</div>
+   <div class="ejemplo">Elemento 4</div>
+   <div name="Nuevo-ejem">Elemento 4</div>
+   
+   <button onclick="cambiarTexto()">
+    Cambiar todos los párrafos</button>
+    
+<script>
+function cambiarTexto() {
+let x=document.getElementsByClassName("ejemplo")
+for (i = 0; i < x.length; i++) {
+x[i].innerHTML="Codo a Codo! " +(i+1)
+}
+}
+
+const divs = document.querySelector("#ejem"); // solo elemento 
+const divs2 = document.querySelectorAll(".ejem"); // Va estar con array toda la coleccion 
+divs.innerHTML = "Nuevo texto!!";
+
+const nuevosEjemp = document.querySelectorAll("[Nuevo-ejem]");
+
+let test = document.createElement("p");
+console.log(test.isConnected); // Returns false
+document.body.appendChild(test);
+console.log(test.isConnected);
+test.innerHTML = "Contendio del parrafo";
+</script>
+
+</body>
+</html>
