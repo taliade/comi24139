@@ -1,0 +1,12 @@
+.reloj-contador{
+    background-color: dodgerblue;
+    color: aqua;
+    text-align: center;
+    font-size: 25px;
+}
+
+button{
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+}
